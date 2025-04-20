@@ -1,11 +1,10 @@
 import type { Color } from "./color";
 
 export type Cricle = {
-  color: Color;
-  length: number;
-};
-
-export type FixedCricle = {
+  id: string;
   x: number;
   y: number;
-} & Cricle;
+  color: Color;
+  length: number;
+  firstAngle?: number;
+};
