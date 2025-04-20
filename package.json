@@ -1,0 +1,23 @@
+{
+  "name": "circle-liner",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "tsc && vite build",
+    "preview": "vite preview",
+    "biome": "biome check --write ./src && biome format --write ./src",
+    "lint": "biome check --write ./src",
+    "format": "biome format --write ./src"
+  },
+  "devDependencies": {
+    "@biomejs/biome": "1.9.4",
+    "@types/p5": "^1.7.6",
+    "typescript": "5.8.3",
+    "vite": "^6.3.1"
+  },
+  "dependencies": {
+    "p5": "1.11.5"
+  }
+}
