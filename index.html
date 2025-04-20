@@ -4,7 +4,25 @@
     <meta charset="UTF-8" />
     <link rel="icon" type="image/svg+xml" href="/vite.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>CircleLiner</title>
+    <title>星をつかまえて</title>
+    <meta name="description" content="ブラウザで遊べるゲーム 星をつかまえて" />
+    <meta name="application-name" content="星をつかまえて" />
+    <meta name="category" content="website" />
+    <meta name="author" content="kanakanho" />
+    <meta name="keywords" content="kanakanho, 星をつかまえて" />
+    <meta property="og:site_name" content="星をつかまえて" />
+    <meta property="og:title" content="星をつかまえて" />
+    <meta property="og:description" content="ブラウザで遊べるゲーム 星をつかまえて" />
+    <meta property="og:url" content="https://catchstar.kanakanho.dev" />
+    <meta property="og:type" content="website" />
+    <meta property="og:image" content="/ogp.png" />
+    <meta property="og:image:alt" content="window" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:site" content="@Shiba_ao_" />
+    <meta name="twitter:creator" content="@Shiba_ao_" />
+    <meta name="twitter:description" content="ブラウザで遊べるゲーム 星をつかまえて" />
+    <meta name="twitter:image" content="/ogp.png" />
+    <meta name="twitter:image:type" content="image/png" />
     <style>
       * {
         margin: 0;
@@ -15,8 +33,21 @@
         overflow: hidden;
         background-image: linear-gradient(135deg, #5efce8 10%, #736efe 100%);
       }
+      header {
+        padding-top: 5svh;
+      }
+      header .title {
+        height: 10svh;
+        text-align: center;
+        mask-image: url(./title.svg);
+        -webkit-mask-image: url(./title.svg);
+        mask-size: contain;
+        mask-repeat: no-repeat;
+        mask-position: center;
+        background-color: #fff;
+      }
       main {
-        margin: 10svh 10svw;
+        margin: 0 10svw 10svh 10svw;
       }
       main canvas {
         border-radius: 30px;
@@ -25,7 +56,10 @@
     </style>
   </head>
   <body>
-    <main />
+    <header>
+      <div class="title"></div>
+    </header>
+    <main></main>
     <script type="module" src="/src/main.ts"></script>
   </body>
 </html>
